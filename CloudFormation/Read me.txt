@@ -1,0 +1,2 @@
+## Install Jenkins on EC2.
+## Running CloudFormation from Github using Jenkins.

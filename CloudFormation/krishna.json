@@ -1,0 +1,26 @@
+{
+    "AWSTemplateFormatVersion": "2020-01-10",
+    "Resources": {
+        "S3Bucket": {
+            "Type": "AWS::S3::Bucket"
+        },
+    "AlertSNSTopic" : {
+        "Type" : "AWS::SNS::Topic",
+        "Properties" : {
+          "Subscription" :  [{
+            "Endpoint" : "kotlakrishna520@email.com",
+            "Protocol" : "email"
+          }]
+        }
+      }
+    },
+    "Outputs": {
+        "BucketName": {
+            "Value": {
+                "Ref": "S3Bucket"
+            },
+            "Description": "Name of the sample Amazon S3 bucket."
+        }
+        }
+}         
+        
